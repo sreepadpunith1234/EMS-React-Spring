@@ -1,0 +1,25 @@
+/* Ensure the body and html cover the full viewport height */
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
+  }
+  
+  .main-content {
+    flex: 1; /* Allows content to expand and push footer to the bottom */
+  }
+  
+  .footer {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
